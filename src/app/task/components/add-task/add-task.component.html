@@ -1,0 +1,10 @@
+<section>
+    <fieldset>
+        <legend>Alta tarea</legend>
+        <form action="">
+            <label for="task-name">Nombre tarea </label>
+            <input type="text" [(ngModel)]="task.name" [ngModelOptions]="{standalone:true}" name="task-name">
+            <button (click)="emitTask()">Agregar</button>
+        </form>
+    </fieldset>
+</section>

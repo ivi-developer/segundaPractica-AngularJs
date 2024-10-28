@@ -1,0 +1,10 @@
+<app-add-task (emitTaskEvent)="addTask($event)" />
+<section>
+    <ul>
+        @for (task of taskList; track $index) {
+        <li>
+            {{task.name}}
+        </li>
+        }
+    </ul>
+</section>
